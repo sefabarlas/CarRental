@@ -23,7 +23,7 @@ namespace ConsoleUI
 
         private static void AddRentalTest()
         {
-            RentalManager rentalManager = new RentalManager(new EfRentalDall());
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
 
             Rental rental = new Rental();
             rental.CarId = 1;
@@ -36,7 +36,7 @@ namespace ConsoleUI
 
         private static void RentalTest()
         {
-            RentalManager rentalManager = new RentalManager(new EfRentalDall());
+            RentalManager rentalManager = new RentalManager(new EfRentalDal());
 
             var result = rentalManager.GetAll();
 
